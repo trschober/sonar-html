@@ -61,6 +61,7 @@ import org.sonar.plugins.html.checks.sonar.LinksIdenticalTextsDifferentTargetsCh
 import org.sonar.plugins.html.checks.sonar.MetaRefreshCheck;
 import org.sonar.plugins.html.checks.sonar.MouseEventWithoutKeyboardEquivalentCheck;
 import org.sonar.plugins.html.checks.sonar.NonConsecutiveHeadingCheck;
+import org.sonar.plugins.html.checks.sonar.ObjectWithAlternativeContentCheck;
 import org.sonar.plugins.html.checks.sonar.PageWithoutFaviconCheck;
 import org.sonar.plugins.html.checks.sonar.PageWithoutTitleCheck;
 import org.sonar.plugins.html.checks.sonar.ServerSideImageMapsCheck;
@@ -140,7 +141,8 @@ public final class CheckClasses {
     ElementWithGivenIdPresentCheck.class,
     LayoutTableCheck.class,
     TableWithoutHeaderCheck.class,
-    LangAttributeCheck.class
+    LangAttributeCheck.class,
+    ObjectWithAlternativeContentCheck.class
   );
 
   private CheckClasses() {
