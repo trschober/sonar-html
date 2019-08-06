@@ -68,7 +68,6 @@
     <assertj.version>3.5.2</assertj.version>
 
     <artifactsToPublish>${project.groupId}:sonar-html-plugin:jar</artifactsToPublish>
-    <maven.compiler.release>8</maven.compiler.release>
   </properties>
 
   <profiles>

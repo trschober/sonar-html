@@ -26,6 +26,7 @@ import org.sonar.plugins.html.checks.coding.DoubleQuotesCheck;
 import org.sonar.plugins.html.checks.coding.FileLengthCheck;
 import org.sonar.plugins.html.checks.coding.InternationalizationCheck;
 import org.sonar.plugins.html.checks.coding.MaxLineLengthCheck;
+import org.sonar.plugins.html.checks.coding.RegularExpressionNotAllowedOnLineCheck;
 import org.sonar.plugins.html.checks.coding.UnclosedTagCheck;
 import org.sonar.plugins.html.checks.comments.AvoidCommentedOutCodeCheck;
 import org.sonar.plugins.html.checks.comments.AvoidHtmlCommentCheck;
@@ -142,7 +143,8 @@ public final class CheckClasses {
     LayoutTableCheck.class,
     LayoutTableWithSemanticMarkupCheck.class,
     TableWithoutHeaderCheck.class,
-    LangAttributeCheck.class
+    LangAttributeCheck.class,
+    RegularExpressionNotAllowedOnLineCheck.class
   );
 
   private CheckClasses() {
