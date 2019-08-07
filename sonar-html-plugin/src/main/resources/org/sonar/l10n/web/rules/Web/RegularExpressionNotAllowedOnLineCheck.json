@@ -1,0 +1,14 @@
+{
+  "title": "Regular Expression not Allowed Template ",
+  "type": "BUG",
+  "status": "ready",
+  "remediation": {
+    "func": "Constant\/Issue",
+    "constantCost": "2min"
+  },
+  "tags": [
+    "accessibility",
+    "bug"
+  ],
+  "defaultSeverity": "Major"
+}

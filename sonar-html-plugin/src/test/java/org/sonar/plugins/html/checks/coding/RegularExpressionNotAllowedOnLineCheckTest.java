@@ -1,6 +1,6 @@
 /*
- * SonarSource :: Web :: Sonar Plugin
- * Copyright (c) 2010-2016 SonarSource SA and Matthijs Galesloot
+ * SonarHTML :: SonarQube Plugin
+ * Copyright (c) 2010-2019 SonarSource SA and Matthijs Galesloot
  * sonarqube@googlegroups.com
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -45,7 +45,7 @@ public class RegularExpressionNotAllowedOnLineCheckTest {
     HtmlSourceCode sourceCode = TestHelper.scan(new File("src/test/resources/checks/RegularExpressionNotAllowedOnLineCheck.html"), check);
 
     checkMessagesVerifier.verify(sourceCode.getIssues())
-        .next().atLine(3).withMessage("Replace all instances of regular expression: Tester");
+        .next().atLine(9).withMessage("Replace all instances of regular expression: Tester");
   }
   
   @Test
