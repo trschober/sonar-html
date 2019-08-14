@@ -47,13 +47,14 @@ public class HtmlRulesDefinitionTest {
       .filter(RulesDefinition.Rule::template)
       .map(RulesDefinition.Rule::key)
       .collect(Collectors.toSet());
-    assertThat(templateRules).hasSize(6);
+    assertThat(templateRules).hasSize(7);
     assertThat(templateRules).containsOnly("IllegalAttributeCheck",
       "LibraryDependencyCheck",
       "ChildElementIllegalCheck",
       "ChildElementRequiredCheck",
       "ParentElementIllegalCheck",
-      "ParentElementRequiredCheck");
+      "ParentElementRequiredCheck",
+      "RegularExpressionNotAllowedOnLineCheck");
 
     for (RulesDefinition.Rule rule : repository.rules()) {
       for (RulesDefinition.Param param : rule.params()) {

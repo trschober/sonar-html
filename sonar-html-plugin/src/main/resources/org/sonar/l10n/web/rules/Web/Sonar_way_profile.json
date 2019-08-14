@@ -22,6 +22,7 @@
     "S5258",
     "S5254",
     "ServerSideImageMapsCheck",
-    "UnsupportedTagsInHtml5Check"
+    "UnsupportedTagsInHtml5Check",
+    "RegularExpressionNotAllowedOnLineCheck"
   ]
 }

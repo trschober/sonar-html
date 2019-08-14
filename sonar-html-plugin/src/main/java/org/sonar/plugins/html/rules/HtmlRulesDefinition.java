@@ -36,7 +36,8 @@ public final class HtmlRulesDefinition implements RulesDefinition {
     "ChildElementIllegalCheck",
     "ChildElementRequiredCheck",
     "ParentElementIllegalCheck",
-    "ParentElementRequiredCheck").collect(Collectors.toSet()));
+    "ParentElementRequiredCheck",
+    "RegularExpressionNotAllowedOnLineCheck").collect(Collectors.toSet()));
 
   public static final String RESOURCE_BASE_PATH = "org/sonar/l10n/web/rules/Web";
 
